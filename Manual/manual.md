@@ -24,7 +24,7 @@ pip3 install prometheus-client
 ```
 
 ## Running Prometheus server
-In the installation directory, open prometheus.yaml file and change the targets.
+In the installation directory, open prometheus.yml file and change the targets.
 Alternatively, replace the content of file with the one provided with this documentation.
 ### Windows
 Go to extracted folder and run prometheus.exe
