@@ -24,13 +24,15 @@ pip3 install prometheus-client
 ```
 
 ## Running Prometheus server
+In the installation directory, open prometheus.yaml file and change the targets.
+Alternatively, replace the content of file with the one provided with this documentation.
 ### Windows
 Go to extracted folder and run prometheus.exe
 
 ### Mac-OS and Linux
-In the installation directory
+IN the extracted directory, open terminal and run
 ```shell
-bash prometheus
+./prometheus
 ```
 
 Go to http://localhost:9090/ to verify
@@ -41,10 +43,11 @@ In the extracted folder run bin/grafana-server.exe
 
 ### Mac-OS and Linux
 ```shell
-bash grafana-server
+./grafana-server
 ```
 
 Go to http://localhost:3000/ to verify. For first run, the default username and password is `admin` and `admin`
 
 ## Visualizing data
 To visualize data in grafana server, firstly data need to be available in prometheus client in the form of metrics. The data can then be pushed to prometheus server. For this prometheus server can be set to target the end point of prometheus client or exporter. 
+
