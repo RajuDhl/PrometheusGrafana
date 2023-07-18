@@ -49,5 +49,5 @@ In the extracted folder run bin/grafana-server.exe
 Go to http://localhost:3000/ to verify. For first run, the default username and password is `admin` and `admin`
 
 ## Visualizing data
-To visualize data in grafana server, firstly data need to be available in prometheus client in the form of metrics. The data can then be pushed to prometheus server. For this prometheus server can be set to target the end point of prometheus client or exporter. 
+To visualize data in grafana server, firstly data need to be available in prometheus client in the form of metrics. The data can then be pulled by prometheus server. For this prometheus server can be set to target the end point of prometheus client or exporter. 
 
