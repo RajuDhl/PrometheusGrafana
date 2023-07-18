@@ -9,6 +9,8 @@ Unzip the file into the new folder created.
 
 Note: For Mac-OS, the OS type is Darwin
 
+* PushGateway can be installed/run in the same way if required
+
 ## Grafana
 Although Grafana is available as installer file and standalone binary for each OS, it is recommended to download standalone binaries for more versatility.
 
@@ -16,7 +18,33 @@ Go to https://grafana.com/grafana/download and download the standalone binary fo
 
 
 ## Prometheus Client
+Prometheus client is installed as a python package
 ```shell
 pip3 install prometheus-client
 ```
 
+## Running Prometheus server
+### Windows
+Go to extracted folder and run prometheus.exe
+
+### Mac-OS and Linux
+In the installation directory
+```shell
+bash prometheus
+```
+
+Go to http://localhost:9090/ to verify
+
+## Running Grafana server
+### WIndows
+In the extracted folder run bin/grafana-server.exe
+
+### Mac-OS and Linux
+```shell
+bash grafana-server
+```
+
+Go to http://localhost:3000/ to verify. For first run, the default username and password is `admin` and `admin`
+
+## Visualizing data
+To visualize data in grafana server, firstly data need to be available in prometheus client in the form of metrics. The data can then be pushed to prometheus server. For this prometheus server can be set to target the end point of prometheus client or exporter. 
