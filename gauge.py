@@ -27,7 +27,7 @@ def test_gauge(value):
         )
 
         # Start an HTTP server on port 8001
-        start_http_server(8001)
+        start_http_server(8000)
 
         # Update the gauge metric value
         while True:
